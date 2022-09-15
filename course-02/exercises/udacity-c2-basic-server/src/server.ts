@@ -78,8 +78,6 @@ import { Car, cars as cars_list } from './cars';
     let cars_list = cars;
 
     if (make){
-      console.log(make);
-
       cars_list = cars.filter((car) => car.make == make);
     }
 
