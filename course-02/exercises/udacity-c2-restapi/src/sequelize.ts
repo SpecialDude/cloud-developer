@@ -6,12 +6,12 @@ const c = config.dev;
 
 // Instantiate new Sequelize instance!
 export const sequelize = new Sequelize({
-  "username": c.username,
-  "password": c.password,
-  "database": c.database,
-  "host":     c.host,
+  "username": c.postgres.username,
+  "password": c.postgres.password,
+  "database": c.postgres.database,
+  "host":     c.postgres.host,
 
-  dialect: 'postgres',
+  dialect: c.postgres.dialect,
   storage: ':memory:',
 });
 
